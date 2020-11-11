@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ContaDAO {
+	
 	public void inserir(Conta c) throws SQLException {
 		  Connection conexao = FabricaDeConexao.getConnection();
 		  String sql = "insert into conta" +
@@ -35,7 +36,7 @@ public class ContaDAO {
 
 
 	public static void main(String[] args) {
-		Conta c = new Conta("titular",1,2,10.0,10.0);
+		Conta c = new Conta("teste",1,2,10.0,10.0);
 		ContaDAO dao = new ContaDAO();
 		try {
 			dao.inserir(c);
