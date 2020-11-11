@@ -13,8 +13,4 @@ public class FabricaDeConexao {
 			throw new RuntimeException(e);
 		}
 	}
-
-	public static void main(String[] args) {
-		FabricaDeConexao.getConnection();
-	}
 }
