@@ -1,7 +1,7 @@
 
 public class Conta {
 	private int id, teste;
-	private String titular;
+	private String titular, nome;
 	private int conta, agencia;
 	private double limite, saldo;
 
